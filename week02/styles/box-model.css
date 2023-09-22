@@ -1,10 +1,10 @@
 .callout {
-    width: 500px;
+    width: 400px;
     margin: 10px;
     border: 1px black;
+    padding: 15px;
     background-color: midnightblue;
     color: #fff;
-	
 }
 
 .callout img {
@@ -23,7 +23,7 @@ blockquote {
 
 cite {
     display: block;
-	border-top: 2px whitesmoke;
+	border-top: 2px dotted black;
     padding-top: 2px;
     text-align: right;
     font-size: smaller;
