@@ -6,8 +6,8 @@
     --accent1-color: #E3E7AF;
     --accent2-color: #A2A77F;
 
-    --heading-font: 'roboto', sans serif;
-    --paragraph-font:'nunito',sans serif;
+    --heading-font: 'roboto', serif;
+    --paragraph-font:'nunito', serif;
 
     --nav-backround-color:var(--primary-color);
     --nav-link-color:var(--accent1-color);
