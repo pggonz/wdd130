@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+:root {
+    --primary-color: #002E2C;
+    --secondary-color: #035E7B;
+    --accent1-color: #E3E7AF;
+    --accent2-color: #A2A77F;
+
+    --heading-font: 'roboto', serif;
+    --paragraph-font:'nunito', serif;
+
+    --nav-backround-color:var(--primary-color);
+    --nav-link-color:var(--accent1-color);
+    --nav-hover-link-color:var(--accent2-color);
+    --nav-hover-background-color:var(--secondary-color);
+}
+
+body {
+    max-width: 960px;
+    background-color: var(--secondary-color);
+	padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+p {
+    padding: 25px;
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+}
+
+header{
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+}
+
+nav a {
+    display:block;
+    color:var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div h1{
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    padding: 1px;
+
+}
+
+div {
+    position: relative;
+    display: block;
+    width: 960px;
+}
+
+article {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+    background-color:var(--primary-color);
+    width: 35rem;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 1px color(black);
+    opacity: 0.8;
+
+}
+
+.banner img {
+    position: relative;
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+.banner p {
+    position: relative;
+    color: var(--accent1-color);
+    padding: 5px; 
+}
+
+section{
+    position: relative;
+    display: block;
+    width: 960px;
+}
+
+section p {
+    background-color:var(--primary-color);
+    width: 35rem;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 1px color(black);
+}
+
+section img{
+    clear: both;
+
+}
+
+footer a {
+    color: var(--secondary-color);
+
+}
