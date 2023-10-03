@@ -5,19 +5,40 @@
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: darkslategrey;
     padding: 10px
 }
 
 nav a {
+    display: block;
+    text-decoration: none;
     color: white;
     display: block;
     padding: 20px;
 }
 
+header,.grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    align-content: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
 h1 {
+    border-bottom: 2px solid darkslategrey;
+    margin-bottom: 1rem;
     color: darkslategrey;
-    padding-left: 30px;
+    padding: 1rem;
 }
 
 main img {
@@ -38,6 +59,9 @@ aside {
     position: relative;
     width: 20rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
 }
 
 aside img {
