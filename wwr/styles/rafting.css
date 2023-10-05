@@ -19,17 +19,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-body {
+/* body {
     max-width: 960px;
     background-color: var(--secondary-color);
 	padding: 20px;
+    display: grid;
+    justify-content: center;
    
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
+    padding: 1rem;
 }
 
 p {
@@ -38,31 +42,33 @@ p {
     font-family: var(--paragraph-font);
 }
 
-header{
-    padding: 10px;
+header,footer,.grid,.maingrid{
+    max-width: 840px;
     background-color: var(--primary-color);
+    margin: 0 auto;
 }
 
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
+    background-color: var(--primary-color);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 nav img {
-    width: 80px;
+    width: 70px;
     height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     display:block;
     color:var(--nav-link-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     height: 20px;
 }
 
@@ -77,15 +83,15 @@ nav a:hover {
 
 .hero img {
     display: flex;
-    width: 920px;
-    padding: 5px;
+    width: 840px;
+    margin: 0 auto;
     height: auto;
 }
 
 div h1{
     position: absolute;
     right: 30px;
-    top: 107px;
+    top: 80px;
     background-color: var(--primary-color);
     opacity: 0.8;
     padding: 10px;
@@ -94,9 +100,9 @@ div h1{
 
 div {
     position: relative;
+    width: 840px;
     display: flex;
     height: auto;
-    /* width: 960px; */
 }
 
 article {
@@ -130,17 +136,17 @@ article {
 
 section{
     /* position: relative; */
-    width: 960px;
+    width: 840px;
 }
 
 section p {
-    display: block;
+    display: flex;
     background-color:var(--primary-color);
-    width: 940px;
-    height: auto;
+    width: 840px;
+    /* height: auto;
     margin: 10px;
     padding: 5px;
-    border: 1px;
+    border: 1px; */
 }
 
 figure{
@@ -151,9 +157,10 @@ figure{
     justify-items: center;
     align-items: center;
     margin: 0;
-    padding: 1rem;
+    padding: 5px;
     border: 0;
     background-color:var(--primary-color);
+    max-width: 192px;
 }
 
 figcaption{
@@ -162,23 +169,15 @@ figcaption{
 }
 
 .grid{
-    width: 960px;
-    /* display:flex;
-    flex-flow: row;
-    justify-content:space-evenly; */
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-
-
 }
+
 .grid img {
-    width: 160px;
+    width: 150px;
 }
 
 footer{
-    width: 960px;
     display: flex;
     justify-items: center;
 }
