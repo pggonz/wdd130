@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');    
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', 'serif' ;
+    background-color: gainsboro;
+}
+
+header,footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+h1 {
+    color: darkslategray;
+
+}
+
+form {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: gainsboro;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.2rem;
+    color: darkslategray;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: larger;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    color: darkslategray;
+    width: 5rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+button:hover {
+    background-color: darkslategrey;
+    color: gainsboro;
+}
+
+footer {
+    font-size: 0.8em;
+    border-top: 1px solid darkslategray;
+    width: 900px;
+    margin: 1rem auto 0;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.2rem;
+}

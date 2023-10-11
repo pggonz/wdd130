@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 | HTML Form - User Poll</title>
+    ,<link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
     <header>
@@ -13,9 +14,12 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>Full Name: <input type="text" name="fullname"></label>
-                <label>Email: <input type="text" name="useremail"></label>
-
+                <div class="form-item column2" >
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                </div>
+                <div class="form-item column2">
+                    <label>Email: <input type="text" name="useremail"></label>
+                </div>
                 <!-- <label for="fullname">Full Name:>
                 <input type="text" id="fullname" name="fullname">
                 <label for="email">Email</label>
@@ -23,25 +27,31 @@
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser"> What is your favorite browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="Other">Other</option>
-                </select>
-                <label for="pet">Do you have a pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <label for="feedback">List the places you have lived?</label>
-                <textarea id="feedback" name -="feedback" rows="4" placeholder="Australia, Bangladesh, Canada, Denmark"></textarea>
+                <div class="form-item column1"></div>
+                    <label for="browser"> What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived?</label>
+                    <textarea id="feedback" name  ="feedback" rows="4" placeholder="Australia, Bangladesh, Canada, Denmark"></textarea>
+                </div>
             </fieldset>
             <button type="submit">Submit Poll</button>
         </form>
     </main>
     <footer>
-        <p>©️2023 | HTML Form - User Poll Activity| Paolo Gonzales</p>
+        <p>©️2023 | HTML Form - User Poll Activity | Paolo Gonzales</p>
     </footer>
 </body>
 </html>
