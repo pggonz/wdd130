@@ -46,7 +46,6 @@ legend {
 
 input, select, textarea {
     padding: 0.5rem;
-    font-size: larger;
 }
 
 input[type="checkbox"] {
@@ -57,7 +56,7 @@ input[type="checkbox"] {
 
 button {
     color: darkslategray;
-    width: 5rem;
+    width: 7rem;
     margin: 0 auto;
     padding: 0.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -67,7 +66,7 @@ button:hover {
     background-color: darkslategrey;
     color: gainsboro;
 }
-/* comment */
+
 footer {
     font-size: 0.8em;
     border-top: 1px solid darkslategray;
@@ -78,15 +77,6 @@ footer {
 .form-item {
     display: grid;
     align-items: center;
-}
+    margin-top: 1.5rem;
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
-    margin: 0.2rem;
 }
