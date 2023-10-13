@@ -35,6 +35,7 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 p {
     padding: 5px;
     color: var(--accent2-color);
@@ -101,7 +102,7 @@ div h1{
 div {
     position: relative;
     width: 840px;
-    display: flex;
+    display: grid;
     height: auto;
 }
 
@@ -132,6 +133,27 @@ article {
     position: relative;
     color: var(--accent1-color);
     padding: 5px; 
+}
+
+.info{
+    width:840px;
+    margin: 0 auto;
+    padding: 1rem var(--primary-color);
+    display:flex;
+    font-weight: 900;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.info p{
+    padding:1rem;
+    padding-bottom: 3rem;
+
+}
+
+.map {
+    justify-content: flex-end;
+    background-color: var(--primary-colors);
 }
 
 section{
@@ -170,7 +192,10 @@ figcaption{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--primary-color);
 }
 
 .grid img {
@@ -183,6 +208,8 @@ footer{
     justify-content: center;
     background-color: var(--primary-color);
     padding-top: 2rem;
+    font-size: 0.8em;
+    margin: 1rem auto 0;
     
 }
 
@@ -202,4 +229,88 @@ footer img{
 
 footer a {
     color: var(--secondary-color);
+}
+
+form {
+    width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: var(--accent2-color);
+    display: grid;
+    height: auto;
+}
+
+fieldset {
+    width: 500px;
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    
+}
+
+legend {
+    padding: 0.2rem;
+    color: darkslategray;
+}
+
+.rad {
+    width: 740px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: flex-start;
+    justify-items: flex-start;
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: large;
+}
+
+textarea {
+    width: 500px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+button {
+    color: darkslategray;
+    width: 8rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.form-item {
+    width: 740px;
+    display: grid;
+    align-items: center;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    width: 740px;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 3fr;
+    margin: 0.2rem 0;
+
 }
