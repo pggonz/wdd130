@@ -264,7 +264,8 @@ fieldset {
 
 legend {
     padding: 0.2rem;
-    color: darkslategray;
+    color: var(--primary-color);
+    font-weight: 900;
 }
 
 .rad {
