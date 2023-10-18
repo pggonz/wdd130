@@ -246,7 +246,7 @@ form {
     padding: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     display: grid;
     height: auto;
 }
