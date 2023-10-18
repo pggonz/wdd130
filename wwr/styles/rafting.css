@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 :root {
-    --primary-color: #035E7B;
-    --secondary-color:#002E2C;
-    --accent1-color: #EFF1C5;
-    --accent2-color: #E3E7AF;
+    --primary-color: #035A77;
+    --secondary-color:#00524E;
+    --accent1-color: #E3E7AF;
+    --accent2-color: #EFF1C5;
     
 
     --heading-font: 'roboto', serif;
@@ -257,6 +257,7 @@ fieldset {
     margin: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    font-family: var(--paragraph-font);
     
 }
 
