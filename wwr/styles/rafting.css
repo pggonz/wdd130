@@ -12,7 +12,7 @@
 
     --nav-backround-color:var(--primary-color);
     --nav-link-color:var(--accent1-color);
-    --nav-hover-link-color:var(--accent2-color);
+    --nav-hover-link-color:#B1B592;
     --nav-hover-background-color:var(--secondary-color);
 
 }
@@ -26,12 +26,13 @@
 body{
     background-color: var(--secondary-color);
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
     padding: 1rem;
     background-color: var(--primary-color);
-    text-decoration: underline;
+
     font-weight: 700;
 }
 
@@ -48,9 +49,9 @@ p {
 
 header,footer,.grid,.maingrid{
     max-width: 840px;
-    /* background-color: var(--primary-color); */
     margin: 0 auto;
-    /* padding-bottom: 1rem; */
+    border-bottom: 1px #B1B592 solid;
+    border-top: 1px #B1B592 solid;
 }
 
 nav {
@@ -88,7 +89,7 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    /* background-color: var(--nav-hover-background-color); */
 }
 
 .hero img {
@@ -98,14 +99,13 @@ nav a:hover {
     height: auto;
 }
 
-div h1{
+.hero h1{
     position: absolute;
     right: 30px;
     top: 80px;
     background-color: var(--primary-color);
     opacity: 0.8;
     padding: 10px;
-
 }
 
 div {
@@ -113,6 +113,41 @@ div {
     width: 840px;
     display: grid;
     height: auto;
+}
+
+.tripsheader{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    color: var(--accent1-color);
+    padding: 5px; 
+}
+
+aside{
+    position: absolute;
+    left: 9rem;
+    top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+    background-color:var(--primary-color);
+    width: 35rem;
+    height: auto;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px;
+    opacity: 0.85;
+
+}
+
+.tripsheader h2{
+    font-size: xx-large;
 }
 
 article {
@@ -127,8 +162,34 @@ article {
     margin: 10px;
     padding: 5px;
     border: 1px;
-    opacity: 0.8;
+    opacity: 0.85;
 
+}
+
+.history{
+    background-color: var(--primary-color);
+    border-bottom: #B1B592 solid 1px ;
+   
+}
+.contactbutton{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    color: gainsboro;
+    height: 4rem;
+    
+}
+
+.contactbutton button{
+    position: relative;
+    text-decoration:none;
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    font-size: larger;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
 }
 
 .banner img {
@@ -155,10 +216,10 @@ article {
     background-color: var(--primary-color);
     
 }
+
 .info p{
     padding:1rem;
-    padding-bottom: 3rem;
-
+    padding-bottom: 2rem;
 }
 
 .map {
@@ -196,6 +257,7 @@ figure{
 
 figcaption{
     color: var(--accent2-color);
+    text-align: center;
     /* background-color: ; */
 }
 
@@ -210,7 +272,6 @@ figcaption{
 .grid img {
     width: 150px;
 }
-
 footer{
     display: flex;
     justify-items: center;
@@ -307,6 +368,20 @@ button:hover {
     color: var(--accent2-color);
 }
 
+.history button {
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+    width: 8rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.history button:hover {
+    color: #B1B592;
+}
+
 .form-item {
     width: 740px;
     display: grid;
@@ -324,4 +399,46 @@ button:hover {
     grid-template-columns: 1fr 3fr;
     margin: 0.2rem 0;
 
+}
+
+table, tr, td{
+    font-family: var(--paragraph-font);
+    
+}
+
+table{
+    display: grid;
+    /* grid-template-columns: 1fr 1; */
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 840px;
+    margin:0 auto;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #B1B592;
+}
+
+th{
+    font-size: larger;
+    
+    margin:0 auto;
+    padding: 1rem;
+    color: var(--accent1-color);
+    background-color: #00524E;
+
+}
+
+td{
+    padding: 1rem;
+    width: 100px;
+    border:1px solid #B1B592;
+    
+    margin:0 auto;
+    color: var(--accent2-color);
+    width: 165px;
+    text-align: center;
+}
+
+footer h5{
+    color: lightseagreen;
 }
