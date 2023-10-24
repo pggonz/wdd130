@@ -255,7 +255,7 @@ section p {
     width: 840px;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 figure{
@@ -319,7 +319,7 @@ footer a {
     color: var(--secondary-color);
 }
 
-form {
+.form-contact {
     width: 840px;
     margin: 0 auto;
     padding: 1rem;
@@ -330,7 +330,7 @@ form {
     height: auto;
 }
 
-fieldset {
+.fieldset-contact {
     width: 500px;
     display: grid;
     grid-gap: 0.5rem;
@@ -479,18 +479,19 @@ footer h5{
     justify-content: center;
     /* align-items: center; */
     align-content: center;
+    padding-bottom: 1rem;
 }
 
 .invites img{
     grid-column:3/4;
     grid-row-start: 1;
+    
 }
 
 .but1{
     grid-column-start: 1;
-    /* grid-column-end: 3; */
-    
     grid-row-start: 3;
+    align-self: center;
     
 }
 
@@ -498,7 +499,7 @@ footer h5{
     
     grid-row-start: 3;
     grid-column-start: 2;
-    
+    align-self: center;
 }
 
 .invites p{
@@ -506,8 +507,74 @@ footer h5{
     justify-self: center;
     width:360px;
     grid-column: 1/3;
+    text-align: center;
 }
 .invites h2{
     align-self: center;
     grid-column: 1/3;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-rows: 60px 60px 40px;
+    padding-bottom: 9px;
+    
+}
+
+.newsletter p{
+    text-align: center;
+}
+
+.index-grid-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+}
+
+label{
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+}
+
+.split{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    justify-items: center;
+    
+
+}
+
+.split img{
+    border: 1px solid #00524E;
+    box-shadow: 0 0 20px #B1B592;
+}
+
+
+.sub1 { 
+    padding-top: 2rem;
+    display:grid;
+    grid-template-rows: 60px 85px 200px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.sub2 { 
+    padding-top: 2rem;
+    display:grid;
+    grid-template-rows: 220px 60px 100px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.split p{
+    width: 360px;
+    text-align: center;
 }
